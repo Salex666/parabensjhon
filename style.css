@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Oswald&display=swap');
+
+:root {
+    --cor-principal: #352f44;
+    --cor-secundaria: #5C5470;
+    --cor-tercearia: #B9B4C7;
+    --cor-quartearia: #FAF0E6;
+
+    --fonte-um: 'Oswald', sans-serif;
+    --fonte-dois: 'Nunito', sans-serif;
+}
+
+body {
+    height: 100%;
+    background: var(--cor-principal);
+}
+
+
+.link{
+    display: flex;
+    justify-content: space-between;
+}
+
+.linkaniversario {
+    text-decoration: none;
+    background-color: var(--cor-secundaria);
+    width: 280px;
+    text-align: center;
+    border-radius: 900px;
+    color: black;
+    padding: 21.5px 0;
+    font-family: var(--fonte-um);
+    font-weight: 500;
+    font-size: 26px;
+
+}
+
+.apresentacao {
+    margin: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textoforte {
+    color: var(--cor-tercearia);
+    font-family: var(--fonte-um);
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.textoparabens {
+    color: var(--cor-quartearia);
+    font-family: var(--fonte-dois);
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.textoPrincipal {
+    width: 615px;
+}
+
+.linkaniversario:hover {
+    border-style: dotted;
+    font-size: 28px;
+    background-color: var(--cor-tercearia);
+}
+
+@media (max-width: 563px) {
+   .apresentacao {
+        flex-direction: column-reverse;
+   }
+
+}
